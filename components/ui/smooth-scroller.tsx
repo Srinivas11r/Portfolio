@@ -11,8 +11,7 @@ export function SmoothScroller({ children }: SmoothScrollerProps) {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.1,
-      smoothWheel: true,
-      smoothTouch: false
+      smoothWheel: true
     });
 
     const raf = (time: number) => {
